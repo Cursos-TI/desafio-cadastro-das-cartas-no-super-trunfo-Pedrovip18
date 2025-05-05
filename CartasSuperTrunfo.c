@@ -4,7 +4,7 @@ int main()  {
 
     char estado1[20], estado2[20], cod1[20], cod2[20], nome1[20], nome2[20];
     int pop1, pop2, pt1, pt2;
-    float area1, area2, pib1, pib2;
+    float area1, area2, pib1, pib2, dp1, dp2, pibperc1, pibperc2;
 
     printf ("Digite o Primeiro Estado: ");
     scanf ("%s", estado1);
@@ -49,6 +49,12 @@ int main()  {
     scanf ("%d", &pt2);
 
 
+dp1 = pop1 / area1;
+dp2 = pop2 / area2;
+pibperc1 = pib1 / pop1;
+pibperc2 = pib2 / pop2;
+    
+
     printf("CARTA 1\n");
     printf("O Estado é: %s\n", estado1);
     printf("O Código é: %s\n", cod1);
@@ -57,6 +63,8 @@ int main()  {
     printf ("A área é: %f km²\n", area1);
     printf ("O PIB é: %f bilhões de reais\n", pib1);
     printf ("O numero de pontos turísticos é: %d\n", pt1);
+    printf ("A Densidade Populacional é: %.2f hab/km²\n", dp1);
+    printf ("O PIB percapita é: %.2f reais\n", pibperc1);
 
 
 
@@ -69,7 +77,8 @@ int main()  {
     printf ("A área é: %f km²\n", area2);
     printf ("O PIB é: %f bilhões de reais\n", pib2);
     printf ("O numero de pontos turísticos é: %d\n", pt2);
-
+    printf ("A Densidade Populacional é: %.2f hab/km²\n", dp2);
+    printf ("O PIB percapita é: %.2f reais\n", pibperc12);
 
 
 }
